@@ -297,7 +297,7 @@ int init_suffix_map()
 Suffix::Encoding get_encoding(const string& s)
 		// try to deduce type from file name using a lookup table
 {
-	static int x = init_suffix_map();
+	//static int x = init_suffix_map();
 
 	string::const_iterator p = find(s.begin(),s.end(),'.');
 	if (p==s.end()) return Suffix::none;	// no suffix

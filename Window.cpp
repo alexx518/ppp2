@@ -37,6 +37,13 @@ void Window::attach(Widget& w)
 	end();				// FTLK: stop attaching new Fl_Wigets to this window
 }
 
+void Window::resize(int ww, int hh)
+{ 
+    w=ww;
+    h=hh; 
+    size(ww,hh); 
+}
+
 void Window::detach(Widget& b)
 {
 	  b.hide();
@@ -56,7 +63,7 @@ void Window::detach(Shape& s)
 
 
 void Window::put_on_top(Shape& p) {
-	for (int i=0; i<shapes.size(); ++i) {
+	for (unsigned int i=0; i<shapes.size(); ++i) {
 		if (&p==shapes[i]) {
 			for (++i; i<shapes.size(); ++i)
 				shapes[i-1] = shapes[i];
