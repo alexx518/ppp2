@@ -2,7 +2,7 @@
 
 Compile with GCC 7:
 ```
-g++ -std=c++11  13-drill-01-graphics-practise.cpp Graph.cpp Window.cpp GUI.cpp Simple_window.cpp  -lfltk -lfltk_images -o main
+g++ -std=c++11 main.cpp Graph.cpp Window.cpp GUI.cpp Simple_window.cpp  -lfltk -lfltk_images -o main
 ```
 
 Output: 
