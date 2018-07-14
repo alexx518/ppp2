@@ -1,9 +1,9 @@
 #include "Simple_window.h"
 #include "Graph.h"
 
-int main() {
+int main() {
     using namespace Graph_lib;
-    Point tl{200,200};
+    Point tl {200,200};
     
     Simple_window win {tl,600,400,"test"};
     
